@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div id = "calculator"> 
-        <input id = "display" readonly>
-        <div id = keys>
-            <button id = "clear">AC</button>
-            <button id = "signChange">+/-</button>
-            <button id = "percent">%</button>
-            <button id = "divide">/</button>
-            <button id = "7">7</button>
-            <button id = "8">8</button>
-            <button id = "9">9</button>
-            <button id = "multiply">x</button>
-            <button id = "4">4</button>
-            <button id = "5">5</button>
-            <button id = "6">6</button>
-            <button id = "subtract">-</button>
-            <button id = "1">1</button>
-            <button id = "2">2</button>
-            <button id = "3">3</button>
-            <button id = "add">+</button>
-            <button id = "0">0</button>
-            <button id = ".">.</button>
-            <button id = "=">=</button>
-        </div>
-    </div>
+  <div class="calculator">
+      <input type="text" class="calculator-screen" value="" disabled />
+      <div class="calculator-keys">
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+          <button type="button" class="operator" value="+/-">±</button>
+          <button type="button" class="operator" value="%">%</button>
+          <button type="button" class="sideoperator" value="/">÷</button>
+
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+          <button type="button" class="sideoperator" value="*">×</button>
+
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+          <button type="button" class="sideoperator" value="-">-</button>
+
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+          <button type="button" class="sideoperator" value="+">+</button>
+
+          <button type="button" value="0" class="zero">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="equal-sign" value="=">=</button>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
+
 </html>
