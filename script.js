@@ -127,3 +127,10 @@ function inputDecimal(dot) {
     }
 }
 
+// all clear function. resets the calculator
+function resetCalculator() {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+}
